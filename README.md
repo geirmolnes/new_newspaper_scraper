@@ -59,6 +59,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - your-email@example.com
+Your Name - g.molnes@gmail.com
 
-Project Link: https://github.com/your-github-username/news-archiver
+Project Link: https://github.com/geirmol/news-archiver
