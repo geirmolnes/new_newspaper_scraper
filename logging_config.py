@@ -1,4 +1,5 @@
 import logging
+from pytz import timezone
 
 
 def configure_logger(name):
@@ -6,7 +7,12 @@ def configure_logger(name):
     logger.propagate = (
         False  # Prevents log messages from being passed to the parent logger
     )
-    formatter = logging.Formatter("%(asctime)s:%(levelname)s:%(message)s")
+
+    oslo_tz = timezone("Europe/Oslo")
+    formatter = logging.Formatter(
+        "%(asctime)s %(levelname)s %(message)s", "%Y-%m-%d %H:%M:%S"
+    )
+    formatter.converter = oslo_tz.fromutc
 
     file_handler = logging.FileHandler("scraper.log")
     file_handler.setFormatter(formatter)
@@ -19,3 +25,6 @@ def configure_logger(name):
     logger.setLevel(logging.INFO)
 
     return logger
+
+
+# Rest of the code remains unchanged
