@@ -25,6 +25,3 @@ def configure_logger(name):
     logger.setLevel(logging.INFO)
 
     return logger
-
-
-# Rest of the code remains unchanged
