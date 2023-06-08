@@ -1,0 +1,169 @@
+{
+  "newspapers": [
+    {
+      "newspaper_name": "nrk",
+      "feed_url": "https://www.nrk.no/toppsaker.rss",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "nrk",
+      "feed_url": "https://www.nrk.no/norge/toppsaker.rss",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "tv2",
+      "feed_url": "https://www.tv2.no/rss/nyheter",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "tv2",
+      "feed_url": "https://www.tv2.no/rss/sport",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "vg",
+      "feed_url": "https://www.vg.no/rss/feed/?limit=100&format=rss&private=1&submit=Abonn%C3%A9r+n%C3%A5%21",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "vg",
+      "feed_url": "https://www.vg.no/rss/feed/",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "aftenposten",
+      "feed_url": "https://www.aftenposten.no/rss/",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "dagbladet",
+      "feed_url": "https://www.dagbladet.no/rss/",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "dn",
+      "feed_url": "https://services.dn.no/api/feed/rss/",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "nettavisen",
+      "feed_url": "https://www.nettavisen.no/service/rich-rss",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "e24",
+      "feed_url": "https://www.e24.no/rss/",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "klassekampen",
+      "feed_url": "https://www.klassekampen.no/section/rssfeed/1005&template=rss&mime=xml",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "dagsavisen",
+      "feed_url": "https://www.dagsavisen.no/rss",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "vl",
+      "feed_url": "https://www.vl.no/rss",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "filternyheter",
+      "feed_url": "https://filternyheter.no/feed/",
+      "media_type": "mainstream"
+    },
+    {
+      "newspaper_name": "steigan.no",
+      "feed_url": "https://steigan.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "rights",
+      "feed_url": "https://rights.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "document",
+      "feed_url": "https://document.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "inyheter",
+      "feed_url": "https://inyheter.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "derimot",
+      "feed_url": "https://derimot.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "radikal_portal",
+      "feed_url": "https://radikalportal.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "lykten",
+      "feed_url": "https://lykten.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "gjenstridig",
+      "feed_url": "https://gjenstridig.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "alternativ_media",
+      "feed_url": "https://alternativmedia.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "caluna",
+      "feed_url": "https://caluna.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "frihetskamp",
+      "feed_url": "https://frihetskamp.net/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "politisk_ukorrekt",
+      "feed_url": "https://politiskukorrekt.org/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "nyhetsspeilet",
+      "feed_url": "https://nyhetsspeilet.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "maalmannen",
+      "feed_url": "https://maalmannen.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "hemali",
+      "feed_url": "https://hemali.no/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "idag",
+      "feed_url": "https://idag.no/atom.xml",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "motvind",
+      "feed_url": "https://motvind.org/feed/",
+      "media_type": "alternative"
+    },
+    {
+      "newspaper_name": "fakta360",
+      "feed_url": "https://fakta360.no/feed/",
+      "media_type": "alternative"
+    }
+  ]
+}
