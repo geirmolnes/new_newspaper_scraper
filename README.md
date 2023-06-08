@@ -30,7 +30,7 @@ This project is a Python-based scraper that pulls in articles from various news 
 
 ## Usage
 
-After setting up the project, you can run the program with:
+After setting up the project, you can run the program with: python main.py
 
 ## Features
 
