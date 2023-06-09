@@ -10,7 +10,7 @@ logger = configure_logger(__name__, log_path=LOGGER_PATH)
 def main():
     """
     Scrape the articles, store them in a CSV,
-    and then insert the articles into the database.
+    insert the articles into the database.
     """
 
     start_time = time.time()
