@@ -3,11 +3,21 @@ from pytz import timezone
 from datetime import datetime
 
 
-class CustomFormatter(logging.Formatter):
+class CustomFormatter:
+    def __init__(self):
+        self.formatter = logging.Formatter(
+            "%(asctime)s %(levelname)s %(message)s", "%Y-%m-%d %H:%M:%S"
+        )
+        self.oslo_tz = timezone("Europe/Oslo")
+
     def converter(self, timestamp):
         dt = datetime.fromtimestamp(timestamp)
-        oslo_tz = timezone("Europe/Oslo")
-        return oslo_tz.localize(dt)
+        return self.oslo_tz.localize(dt)
+
+    def format(self, record):
+        # Modify record's asctime with our custom format
+        record.asctime = self.formatTime(record)
+        return self.formatter.format(record)
 
     def formatTime(self, record, datefmt=None):
         dt = self.converter(record.created)
@@ -27,9 +37,7 @@ def configure_logger(name, log_path):
         False  # Prevents log messages from being passed to the parent logger
     )
 
-    formatter = CustomFormatter(
-        "%(asctime)s %(levelname)s %(message)s", "%Y-%m-%d %H:%M:%S"
-    )
+    formatter = CustomFormatter()
 
     file_handler = logging.FileHandler(log_path)
     file_handler.setFormatter(formatter)
