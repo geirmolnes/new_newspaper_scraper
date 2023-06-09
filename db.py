@@ -1,19 +1,15 @@
 import psycopg2
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-db_string = os.getenv("DB_STRING")
+from config import DB_STRING
 
 
-def url_in_db(canonical_url, non_canonical_url):
+def url_in_db(canonical_url, non_canonical_url, db_string=DB_STRING):
     with psycopg2.connect(db_string) as conn, conn.cursor() as cur:
         select_query = "SELECT 1 FROM newspapers8 WHERE canonical_url = %s OR non_canonical_url = %s"
         cur.execute(select_query, (canonical_url, non_canonical_url))
         return cur.fetchone() is not None
 
 
-def insert_articles(articles):
+def insert_articles(articles, db_string=DB_STRING):
     with psycopg2.connect(db_string) as conn, conn.cursor() as cur:
         for article in articles:
             canonical_url = article.get("canonical_url")

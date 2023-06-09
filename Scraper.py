@@ -8,9 +8,10 @@ import random
 from logging_config import configure_logger
 from UrlExtractor import get_canonical_url
 import db
+from config import LOGGER_PATH
 
 
-logger = configure_logger(__name__)
+logger = configure_logger(__name__, log_path=LOGGER_PATH)
 
 
 class Scraper:
@@ -149,11 +150,9 @@ class Scraper:
         return data
 
     @staticmethod
-    def create_csv(data):
+    def create_csv(data, csv_path):
         """
         Create a CSV file with the scraped data.
         """
         df = pd.DataFrame(data)
-        df.to_csv(
-            "/home/geirmol/new_archiver/data.csv", index=False
-        )  # Use absolute path here
+        df.to_csv(csv_path, index=False)  # Use absolute path here
