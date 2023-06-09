@@ -21,10 +21,8 @@ def main():
 
     db.insert_articles(articles, db_string=DB_STRING)
 
-    end_time = time.time()  # Record the end time
-    elapsed_time_seconds = (
-        end_time - start_time
-    )  # Calculate the elapsed time in seconds
+    end_time = time.time()
+    elapsed_time_seconds = end_time - start_time
     elapsed_time_minutes = elapsed_time_seconds // 60
     elapsed_time_seconds %= 60
 
