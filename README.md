@@ -26,7 +26,7 @@ This project is a Python-based scraper that pulls in articles from various news 
     pip install -r requirements.txt
     ```
 
-4. Set up the PostgreSQL database. You will need to provide a connection string in the `db.py` module.
+4. Set up the PostgreSQL database. You will need to create a .env-file where you provide necessary info for setup.py, such as a connection string.
 
 ## Usage
 
