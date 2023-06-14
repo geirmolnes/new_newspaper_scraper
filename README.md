@@ -61,4 +61,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - g.molnes@gmail.com
 
-Project Link: https://github.com/geirmoles/new_newspaper_scraper
+Project Link: https://github.com/geirmolnes/new_newspaper_scraper
+
