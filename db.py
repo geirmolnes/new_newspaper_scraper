@@ -2,6 +2,25 @@ import psycopg2
 from config import DB_STRING
 
 
+def create_table(db_string=DB_STRING, table_name="newspapers8"):
+    with psycopg2.connect(db_string) as conn, conn.cursor() as cur:
+        cur.execute(f"DROP TABLE IF EXISTS {table_name}")
+        cur.execute(
+            f"""
+            CREATE TABLE {table_name} (
+            published_time TIMESTAMP,
+            newspaper TEXT,
+            headline TEXT,
+            canonical_url TEXT,
+            non_canonical_url TEXT,
+            article_text TEXT,
+            media_type TEXT,
+            fetched_time TIMESTAMP
+            )
+            """
+        )
+
+
 def url_in_db(canonical_url, non_canonical_url, db_string=DB_STRING):
     with psycopg2.connect(db_string) as conn, conn.cursor() as cur:
         select_query = "SELECT 1 FROM newspapers8 WHERE canonical_url = %s OR non_canonical_url = %s"

@@ -14,6 +14,7 @@ def main():
     """
 
     start_time = time.time()
+    db.create_table(db_string=DB_STRING, table_name="newspapers8")
 
     scraper = Scraper(NEWSPAPERS_JSON_PATH)
     articles = scraper.scrape()
