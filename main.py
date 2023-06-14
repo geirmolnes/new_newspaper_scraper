@@ -18,7 +18,6 @@ def main():
 
     scraper = Scraper(NEWSPAPERS_JSON_PATH)
     articles = scraper.scrape()
-    scraper.create_csv(articles, csv_path=CSV_PATH)
 
     db.insert_articles(articles, db_string=DB_STRING)
 

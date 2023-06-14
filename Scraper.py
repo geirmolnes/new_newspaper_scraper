@@ -148,11 +148,3 @@ class Scraper:
             )
 
         return data
-
-    @staticmethod
-    def create_csv(data, csv_path):
-        """
-        Create a CSV file with the scraped data.
-        """
-        df = pd.DataFrame(data)
-        df.to_csv(csv_path, index=False)  # Use absolute path here
