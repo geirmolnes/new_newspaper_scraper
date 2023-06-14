@@ -47,6 +47,7 @@ After setting up the project, you can run the program with: python main.py
 - `db.py`: The script containing the `Database` class, which interacts with a PostgreSQL database to store article data.
 - `logging_config.py`: The script which sets up custom logging for the project.
 - `UrlExtractor.py`: A helper script for dealing with URLs in the articles.
+- `config.py`: Helper script for setting up global variables, which can be loaded from an .env-file.
 - `newspapers.json`: A JSON file containing the list of newspapers to scrape.
 
 ## Contributing
