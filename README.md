@@ -1,6 +1,6 @@
 # News Archiver
 
-This project is a Python-based scraper that pulls in articles from various news outlets, stores the data in a CSV file, and inserts the articles into a database.
+This project is a Python-based scraper that pulls in articles from various news outlets and inserts the articles into a database.
 
 ## Setup
 
